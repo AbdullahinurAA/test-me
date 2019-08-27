@@ -1,0 +1,102 @@
+// font styles
+$my-title-font: 'Libre Baskerville', serif;
+$my-sub-font: 'Montserrat', sans-serif;
+$font-sm: 0.8rem;
+// Colors
+$navy-blue: #0b2f5f;
+$dark-grey: #8d99ae;
+$light-grey: #edf2f4;
+$red: #ef233c;
+$dark-red: #d90429;
+
+.my-title-font {
+    font-family: $my-title-font;
+}
+
+.my-sub-font {
+    font-family: $my-sub-font;
+}
+
+.small-font-top {
+    font-family: $my-sub-font;
+    font-size: $font-sm;
+}
+
+.navy-blue-text {
+    color: $navy-blue;
+}
+
+.dark-red-text {
+    color: $dark-red;
+}
+
+.bg-dark-grey {
+    background-color: $dark-grey;
+}
+
+.bg-light-grey {
+    background-color: $light-grey;
+}
+
+.bg-navy-blue {
+    background-color: $navy-blue;
+}
+
+.bg-dark-red {
+    background-color: $dark-red;
+}
+
+
+.head-container {
+    line-height: 4.5;
+    .row {
+        line-height: .5;
+    }
+    p {
+        line-height: 1.5;
+
+    }
+}
+
+.slide {
+    height: 50%;
+}
+
+.service-wrap {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+.address {
+    line-height: .5;
+}
+
+.email {
+    line-height: .5;
+}
+
+.full-width-image-one {
+    background: $navy-blue center no-repeat;
+    height: 50vh;
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { 
+    .head-container {
+        p {
+           
+            padding: 0;
+        }
+    }
+
+    .service-wrap {
+        padding: 0 0;
+        margin: 0;
+        .row {
+            text-align: center;
+            img {
+                padding: 1rem;
+            }
+        }
+    }
+ }
