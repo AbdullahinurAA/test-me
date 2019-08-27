@@ -66,6 +66,7 @@ $dark-red: #d90429;
     margin-left:auto;
     margin-right:auto;
     display:block;
+    overflow: hidden;
 }
 
 .address {
@@ -90,13 +91,23 @@ $dark-red: #d90429;
     }
 
     .service-wrap {
-        padding: 0 0;
-        margin: 0;
         .row {
-            text-align: center;
+            text-align: center !important;
             img {
                 padding: 1rem;
             }
         }
     }
+ }
+
+ // Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .service-wrap {
+        .row {
+            .tr {
+                text-align: right;
+            }
+        }
+    }
+
  }
