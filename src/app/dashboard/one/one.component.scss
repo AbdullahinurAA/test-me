@@ -1,0 +1,118 @@
+// font styles
+$my-title-font: 'Libre Baskerville', serif;
+$my-sub-font: 'Montserrat', sans-serif;
+$font-sm: 0.8rem;
+// Colors
+$navy-blue: #0b2f5f;
+$dark-grey: #8d99ae;
+$light-grey: #edf2f4;
+$red: #ef233c;
+$dark-red: #d90429;
+
+.my-title-font {
+    font-family: $my-title-font;
+}
+
+.my-sub-font {
+    font-family: $my-sub-font;
+}
+
+.small-font-top {
+    font-family: $my-sub-font;
+    font-size: $font-sm;
+}
+
+.navy-blue-text {
+    color: $navy-blue;
+}
+
+.light-grey-text {
+    color: $light-grey;
+}
+
+.dark-red-text {
+    color: $dark-red;
+}
+
+.bg-dark-grey {
+    background-color: $dark-grey;
+}
+
+.bg-light-grey {
+    background-color: $light-grey;
+}
+
+.bg-navy-blue {
+    background-color: $navy-blue;
+}
+
+.bg-navy-blue-op-9 {
+    background-color: $navy-blue;
+    opacity: 0.6;
+}   
+
+.bg-dark-red {
+    background-color: $dark-red;
+}
+
+.bg-dark-red-op-9 {
+    background-color: $dark-red;
+    opacity: 0.6;
+}
+
+.head-container {
+    line-height: 4.5;
+    .row {
+        line-height: .5;
+    }
+    p {
+        line-height: 1.5;
+
+    }
+}
+
+.container {
+    .gallery {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-width: 33%;
+        -moz-column-width: 33%;
+        column-width: 33%; }
+        .gallery .pics {
+        -webkit-transition: all 350ms ease;
+        transition: all 350ms ease; }
+        .gallery .animation {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1); }
+        
+        @media (max-width: 450px) {
+        .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+        }
+        }
+        
+        @media (max-width: 400px) {
+        .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+        }
+        }
+}
+
+.page-footer {
+    background-color: green !important;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 400px) { 
+    .container {
+        margin-bottom: 10vh;
+    }
+}
