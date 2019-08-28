@@ -63,6 +63,14 @@ $dark-red: #d90429;
   }
 }
 
+.top-row {
+    overflow: hidden;
+  
+    .bg-dark-red:hover {
+      background-color: $navy-blue;
+    }
+  }
+
 
 .full-width-image-one {
   background: $navy-blue center no-repeat;
@@ -75,8 +83,16 @@ $dark-red: #d90429;
 
 .company-wrapper {
     background-color: $light-grey;
-    height: 50vh;
+    height: 100%;
+    
+
+
 }
+
+
+
+
+
 
 
 // Small devices (landscape phones, 576px and up)

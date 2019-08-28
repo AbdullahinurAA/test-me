@@ -31,6 +31,12 @@
             ],
             "styles": [
               {
+                "input": "node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+              },
+              {
+                "input": "node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+              },
+              {
                 "input": "node_modules/font-awesome/scss/font-awesome.scss"
               },
               {
