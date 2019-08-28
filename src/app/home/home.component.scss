@@ -152,6 +152,22 @@ $dark-red: #d90429;
   .container {
     text-align: left;
   }
+
+  .sub-image {
+      img {
+          position: relative;
+          padding: 0 0 0 20rem;
+      }
+  }
+
+  .top-image {
+    z-index: 6;
+    top: 5vh;
+    left: 10vw;
+      img {
+          position: relative;
+      }
+  }
 }
 
 @media (min-width: 1500px) {
