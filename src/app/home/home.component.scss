@@ -1,5 +1,7 @@
-$my-title-font: 'Libre Baskerville', serif;
-$my-sub-font: 'Montserrat', sans-serif;
+$my-title-font: 'Libre Baskerville',
+serif;
+$my-sub-font: 'Montserrat',
+sans-serif;
 $font-sm: 0.8rem;
 // Colors
 $navy-blue: #0b2f5f;
@@ -9,89 +11,129 @@ $red: #ef233c;
 $dark-red: #d90429;
 
 .my-title-font {
-    font-family: $my-title-font;
+  font-family: $my-title-font;
 }
 
 .my-sub-font {
-    font-family: $my-sub-font;
+  font-family: $my-sub-font;
 }
 
 .small-font-top {
-    font-family: $my-sub-font;
-    font-size: $font-sm;
+  font-family: $my-sub-font;
+  font-size: $font-sm;
 }
 
 .navy-blue-text {
-    color: $navy-blue;
+  color: $navy-blue;
 }
 
 .dark-red-text {
-    color: $dark-red;
+  color: $dark-red;
+}
+
+.light-grey-text {
+  color: $light-grey;
+}
+
+.dark-grey-text {
+  color: $dark-grey;
 }
 
 .bg-dark-grey {
-    background-color: $dark-grey;
+  background-color: $dark-grey;
 }
 
 .bg-light-grey {
-    background-color: $light-grey;
+  background-color: $light-grey;
 }
 
 .bg-navy-blue {
-    background-color: $navy-blue;
+  background-color: $navy-blue;
 }
 
 .bg-dark-red {
-    background-color: $dark-red;
+  background-color: $dark-red;
+}
+
+.header {
+  overflow: hidden;
+
+  .bg-dark-red:hover {
+    background-color: $navy-blue;
+  }
 }
 
 
 .full-width-image-one {
-    background: $navy-blue center no-repeat;
+  background: $navy-blue center no-repeat;
+  height: 50vh;
+}
+
+* {
+    overflow: hidden;
+}
+
+.company-wrapper {
+    background-color: $light-grey;
     height: 50vh;
 }
 
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 200px) {
-    .header {
-        text-align: center !important;
-        width: 100%;
-        h1 {
-            font-size: 2.5rem;
-        }
-        p {
-            font-size: 1rem;
-        }
+  .header {
+    text-align: center !important;
+    width: 100%;
+
+    h1 {
+      font-size: 2.5rem;
     }
- }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .container {
+    text-align: center;
+  }
+}
 
 @media (min-width: 375px) {
-    .header {
-        text-align: center !important;
-        width: 100%;
-        h1 {
-            font-size: 2.5rem;
-        }
-        p {
-            font-size: 1rem;
-        }
-    }
- }
+  .header {
+    text-align: center !important;
+    width: 100%;
 
- @media (min-width: 1000px) {
-    .header {
-        text-align: left !important;
-        width: 100%;
-        margin: 6rem 0rem;
-        padding: 0 0 0 10rem;
-        h1 {
-            font-size: 4rem;
-            width: 75%;
-        }
-        p {
-            font-size: 1.5rem;
-            width: 60%;
-        }
+    h1 {
+      font-size: 2.5rem;
     }
- }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+
+}
+
+@media (min-width: 1000px) {
+  .header {
+    text-align: left !important;
+    width: 100%;
+    margin: 6rem 0rem;
+    padding: 0 0 0 10rem;
+
+    h1 {
+      font-size: 4rem;
+      width: 75%;
+    }
+
+    p {
+      font-size: 1.3rem;
+      width: 60%;
+    }
+  }
+  .container {
+    text-align: left;
+  }
+}

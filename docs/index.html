@@ -22,10 +22,25 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
   <script>
-    new WOW().init();
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       2,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null,    // optional scroll container selector, otherwise use window,
+    resetAnimation: true,     // reset animation on end (default is true)
+  }
+);
+wow.init();
 
   </script>
 
-<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.991eda935898a57f5c1f.js"></script><script type="text/javascript" src="scripts.dd86f002a5aef1b13f0f.js"></script><script type="text/javascript" src="main.a6a103cfc86ac3c9850c.js"></script></body>
+<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.991eda935898a57f5c1f.js"></script><script type="text/javascript" src="scripts.dd86f002a5aef1b13f0f.js"></script><script type="text/javascript" src="main.15afde3255ee3a04da9d.js"></script></body>
 
 </html>
