@@ -153,3 +153,25 @@ $dark-red: #d90429;
     text-align: left;
   }
 }
+
+@media (min-width: 1500px) {
+    .header {
+      text-align: left !important;
+      width: 100%;
+      margin: 10rem 0rem;
+      padding: 0 0 0 10rem;
+  
+      h1 {
+        font-size: 4rem;
+        width: 75%;
+      }
+  
+      p {
+        font-size: 1.3rem;
+        width: 60%;
+      }
+    }
+    .container {
+      text-align: left;
+    }
+  }
