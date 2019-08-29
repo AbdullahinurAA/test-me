@@ -75,8 +75,7 @@ $dark-red: #d90429;
 .full-width-image-one {
   background: url("../../assets/Yare-42.jpg") center no-repeat;
   height: 50vh;
-  background-position-x: -138vw;
-  background-position-y: -300vh;
+  background-size: cover;
 
 
 }
@@ -169,6 +168,7 @@ $dark-red: #d90429;
     p {
       font-size: 1.3rem;
       width: 60%;
+      padding-left: 1rem;
     }
   }
   .container {
@@ -207,6 +207,7 @@ $dark-red: #d90429;
       p {
         font-size: 2rem;
         width: 60%;
+
       }
     }
     .container {
