@@ -3,5 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat&display=swap');
 
 body {
-    overflow-x:hidden;  
+    overflow-x:hidden; 
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch; 
 }
