@@ -73,12 +73,25 @@ $dark-red: #d90429;
 
 
 .full-width-image-one {
-  background: url("../../assets/Yare-42.jpg") center no-repeat;
+  background: url("../../assets/Yare-42.jpg");
   height: 50vh;
   background-size: cover;
-
-
+  background-position: 0px 0px;
+	background-repeat: repeat-x;
+  margin-left: -10vw;
+  animation: moveLeft 15s ease-in-out infinite alternate;
 }
+
+
+@keyframes moveLeft {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 0px 15%;
+  }
+}
+
 
 * {
     overflow: hidden;
@@ -120,7 +133,7 @@ $dark-red: #d90429;
   .header {
     text-align: center !important;
     width: 100%;
-    padding: 8rem 0;
+    padding: 13rem 0;
 
     h1 {
       font-size: 2.5rem;
@@ -129,10 +142,15 @@ $dark-red: #d90429;
     p {
       font-size: 1rem;
     }
+
   }
 
   .container {
     text-align: center;
+  }
+
+  .glide {
+    padding: 1rem;
   }
 }
 
@@ -158,7 +176,7 @@ $dark-red: #d90429;
     text-align: left !important;
     width: 100%;
     margin: 6rem 0rem;
-    padding: 0 0 0 10rem;
+    padding: 6rem 0 0 10rem;
 
     h1 {
       font-size: 4rem;

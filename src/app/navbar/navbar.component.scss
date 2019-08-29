@@ -1,0 +1,54 @@
+// font styles
+$my-title-font: 'Libre Baskerville', serif;
+$my-sub-font: 'Montserrat', sans-serif;
+$font-sm: 0.8rem;
+// Colors
+$navy-blue: #0b2f5f;
+$dark-grey: #8d99ae;
+$light-grey: #edf2f4;
+$red: #ef233c;
+$dark-red: #d90429;
+
+.my-title-font {
+    font-family: $my-title-font;
+}
+
+.my-sub-font {
+    font-family: $my-sub-font;
+}
+
+.small-font-top {
+    font-family: $my-sub-font;
+    font-size: $font-sm;
+}
+
+.navy-blue-text {
+    color: $navy-blue !important;
+}
+
+.dark-red-text {
+    color: $dark-red;
+}
+
+.bg-dark-grey {
+    background-color: $dark-grey;
+}
+
+.bg-light-grey {
+    background-color: $light-grey;
+}
+
+.bg-navy-blue {
+    background-color: $navy-blue;
+}
+
+.bg-dark-red {
+    background-color: $dark-red;
+}
+
+
+@media (min-width: 200px) {
+    .mynav {
+        background-color: $light-grey !important;
+    }
+}

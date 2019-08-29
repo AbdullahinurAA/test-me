@@ -74,11 +74,32 @@ $dark-red: #d90429;
 }
 
 .full-width-image-one {
-    background: $navy-blue center no-repeat;
-    height: 50vh;
+    background: url("../../assets/Yare-17.jpg");
+  height: 50vh;
+  background-size: cover;
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  margin-left: -10vw;
+  animation: moveLeft 40s linear infinite alternate;
+}
+
+
+@keyframes moveLeft {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 0px 80%;
+  }
 }
 
 .full-width-image-two {
     background: $dark-grey center no-repeat;
     height: 100%;
+}
+
+@media (min-width: 200px) {
+    .head-container {
+        padding: 5rem 1rem;
+    }
 }
