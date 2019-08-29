@@ -105,3 +105,9 @@ $dark-red: #d90429;
         }
         }
 }
+
+@media (min-width: 200px) {
+    .head-container {
+        padding: 5rem 1rem;
+    }
+}

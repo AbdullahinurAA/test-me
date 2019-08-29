@@ -111,6 +111,12 @@ $dark-red: #d90429;
 }
 
 // Medium devices (tablets, 768px and up)
+@media (min-width: 200px) {
+    .head-container {
+        padding: 5rem 1rem;
+    }
+}
+
 @media (min-width: 400px) { 
     .container {
         margin-bottom: 10vh;
