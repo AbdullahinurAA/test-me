@@ -82,6 +82,15 @@ $dark-red: #d90429;
   animation: moveLeft 15s ease-in-out infinite alternate;
 }
 
+.company-wrapper {
+  .card-hover:hover {
+    background-color: $navy-blue;
+    h4 {
+      color: $light-grey !important;
+    }
+  }
+}
+
 
 @keyframes moveLeft {
   from {
