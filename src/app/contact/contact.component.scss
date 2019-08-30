@@ -76,3 +76,9 @@ $dark-red: #d90429;
     }
 
  }
+
+ @media (min-width: 1000px) {
+    .head-container {
+        padding: 0 1rem;
+    }
+}

@@ -111,3 +111,10 @@ $dark-red: #d90429;
         padding: 5rem 1rem;
     }
 }
+
+
+@media (min-width: 1000px) {
+    .head-container {
+        padding: 0 1rem;
+    }
+}

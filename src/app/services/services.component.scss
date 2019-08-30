@@ -122,6 +122,12 @@ $dark-red: #d90429;
  }
 
  // Extra large devices (large desktops, 1200px and up)
+ @media (min-width: 1000px) {
+    .head-container {
+        padding: 0 1rem;
+    }
+}
+
 @media (min-width: 1200px) { 
     .service-wrap {
         .row {
