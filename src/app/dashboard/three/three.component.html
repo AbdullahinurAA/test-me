@@ -9,7 +9,102 @@
     <div class="gallery" id="gallery">
   
       <!-- Grid column -->
-      <div class="view overlay mb-3 pics animation all 2 wow fadeInUp">
+      <div class="view overlay mb-3 pics animation all 2 wow fadeInUp" (click)="modalOne.show()">
+        <img class="img-fluid" src="assets/companies/g33/one-cut.jpeg"
+          alt="Card image cap">
+        <div class="mask flex-center bg-dark-red-op-9">
+          <p class="light-grey-text my-title-font h1">G33</p>
+        </div>
+      </div>
+      <!-- Grid column -->
+      <!-- modal one -->
+      <div mdbModal #modalOne="mdbModal" class="modal fade bg-navy-blue" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close pull-right" aria-label="Close" (click)="modalOne.hide()">
+                <span aria-hidden="true">×</span>
+              </button>
+              <h4 class="modal-title w-100 my-title-font navy-blue-text text-center" id="myModalLabel">G33</h4>
+            </div>
+            <div class="modal-body my-sub-font grey-text">
+              <div class="row">
+                <div class="col">
+                    <mdb-carousel [isControls]="true" [animation]="'slide'">
+                        <mdb-carousel-item>
+                            <img src="assets/companies/g33/two.jpeg" class="img-fluid" width="200" alt="first slide">
+                        </mdb-carousel-item>
+                        <mdb-carousel-item>
+                            <img src="assets/companies/g33/one.jpeg" class="img-fluid" width="200" alt="second slide">
+                        </mdb-carousel-item>
+                      </mdb-carousel>
+                </div>
+                <div class="col">
+                    <p>The latest in branded apparel</p>
+                    <p>Location: Ground floor, Yare Plaza</p>
+                    <p>Opening: 8:00 am</p>
+                    <p>Closing: 6:30 pm</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer justify-items-center">
+              <button type="button" mdbBtn color="danger" rounded="true" class="waves-light" aria-label="Close" (click)="modalOne.hide()" mdbWavesEffect>Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal one end -->
+  
+  
+  
+      <!-- Grid column -->
+      <div class="view overlay mb-3 pics animation all 2 wow fadeInUp" (click)="modalTwo.show()">
+        <img class="img-fluid" src="assets/companies/g8/one-cut.jpeg"
+          alt="Card image cap">
+        <div class="mask flex-center bg-dark-red-op-9">
+          <p class="light-grey-text my-title-font h1">G8</p>
+        </div>
+      </div>
+      <!-- Grid column -->
+            <!-- modal two -->
+            <div mdbModal #modalTwo="mdbModal" class="modal fade bg-navy-blue" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close pull-right" aria-label="Close" (click)="modalTwo.hide()">
+                        <span aria-hidden="true">×</span>
+                      </button>
+                      <h4 class="modal-title w-100 my-title-font navy-blue-text text-center" id="myModalLabel">G8</h4>
+                    </div>
+                    <div class="modal-body my-sub-font grey-text">
+                      <div class="row">
+                        <div class="col">
+                            <mdb-carousel [isControls]="true" [animation]="'slide'">
+                                <mdb-carousel-item>
+                                    <img src="assets/companies/g8/two.jpeg" class="img-fluid" width="200" alt="first slide">
+                                </mdb-carousel-item>
+                                <mdb-carousel-item>
+                                    <img src="assets/companies/g8/one.jpeg" class="img-fluid" width="200" alt="second slide">
+                                </mdb-carousel-item>
+                              </mdb-carousel>
+                        </div>
+                        <div class="col">
+                            <p>The latest in branded apparel</p>
+                            <p>Location: Ground floor, Yare Plaza</p>
+                            <p>Opening: 8:00 am</p>
+                            <p>Closing: 6:30 pm</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer justify-items-center">
+                      <button type="button" mdbBtn color="danger" rounded="true" class="waves-light" aria-label="Close" (click)="modalTwo.hide()" mdbWavesEffect>Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- modal two end -->
+      <!-- Grid column -->
+      <div class="view overlay mb-3 pics animation all 2 wow fadeInUp" (click)="modalThree.show()">
         <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
           alt="Card image cap">
         <div class="mask flex-center bg-dark-red-op-9">
@@ -17,11 +112,46 @@
         </div>
       </div>
       <!-- Grid column -->
-  
-  
+      <!-- modal three -->
+      <div mdbModal #modalThree="mdbModal" class="modal fade bg-navy-blue" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="modalThree.hide()">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title w-100 my-title-font navy-blue-text text-center" id="myModalLabel">G33</h4>
+              </div>
+              <div class="modal-body my-sub-font grey-text">
+                <div class="row">
+                  <div class="col">
+                      <mdb-carousel [isControls]="true" [animation]="'slide'">
+                          <mdb-carousel-item>
+                              <img src="assets/companies/g33/two.jpeg" class="img-fluid" width="200" alt="first slide">
+                          </mdb-carousel-item>
+                          <mdb-carousel-item>
+                              <img src="assets/companies/g33/one.jpeg" class="img-fluid" width="200" alt="second slide">
+                          </mdb-carousel-item>
+                        </mdb-carousel>
+                  </div>
+                  <div class="col">
+                      <p>The latest in branded apparel</p>
+                      <p>Location: Ground floor, Yare Plaza</p>
+                      <p>Opening: 8:00 am</p>
+                      <p>Closing: 6:30 pm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer justify-items-center">
+                <button type="button" mdbBtn color="danger" rounded="true" class="waves-light" aria-label="Close" (click)="modalThree.hide()" mdbWavesEffect>Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal three end -->
   
       <!-- Grid column -->
-      <div class="view overlay mb-3 pics animation all 2 wow fadeInUp">
+      <div class="view overlay mb-3 pics animation all 2 wow fadeInUp" (click)="modalFour.show()">
         <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
           alt="Card image cap">
         <div class="mask flex-center bg-dark-red-op-9">
@@ -29,18 +159,46 @@
         </div>
       </div>
       <!-- Grid column -->
-      <!-- Grid column -->
-      <div class="view overlay mb-3 pics animation all 2 wow fadeInUp">
-        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
-          alt="Card image cap">
-        <div class="mask flex-center bg-dark-red-op-9">
-          <p class="light-grey-text my-title-font h1">Fashion</p>
+      <!-- modal four -->
+      <div mdbModal #modalFour="mdbModal" class="modal fade bg-navy-blue" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="modalFour.hide()">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title w-100 my-title-font navy-blue-text text-center" id="myModalLabel">G33</h4>
+              </div>
+              <div class="modal-body my-sub-font grey-text">
+                <div class="row">
+                  <div class="col">
+                      <mdb-carousel [isControls]="true" [animation]="'slide'">
+                          <mdb-carousel-item>
+                              <img src="assets/companies/g33/two.jpeg" class="img-fluid" width="200" alt="first slide">
+                          </mdb-carousel-item>
+                          <mdb-carousel-item>
+                              <img src="assets/companies/g33/one.jpeg" class="img-fluid" width="200" alt="second slide">
+                          </mdb-carousel-item>
+                        </mdb-carousel>
+                  </div>
+                  <div class="col">
+                      <p>The latest in branded apparel</p>
+                      <p>Location: Ground floor, Yare Plaza</p>
+                      <p>Opening: 8:00 am</p>
+                      <p>Closing: 6:30 pm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer justify-items-center">
+                <button type="button" mdbBtn color="danger" rounded="true" class="waves-light" aria-label="Close" (click)="modalFour.hide()" mdbWavesEffect>Close</button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- Grid column -->
+        <!-- modal four end -->
   
       <!-- Grid column -->
-      <div class="view overlay mb-3 pics animation all 2 wow fadeInUp">
+      <div class="view overlay mb-3 pics animation all 2 wow fadeInUp" (click)="modalFive.show()">
         <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
           alt="Card image cap">
         <div class="mask flex-center bg-dark-red-op-9">
@@ -48,9 +206,46 @@
         </div>
       </div>
       <!-- Grid column -->
-  
+      <!-- modal five -->
+      <div mdbModal #modalFive="mdbModal" class="modal fade bg-navy-blue" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="modalFive.hide()">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title w-100 my-title-font navy-blue-text text-center" id="myModalLabel">G33</h4>
+              </div>
+              <div class="modal-body my-sub-font grey-text">
+                <div class="row">
+                  <div class="col">
+                      <mdb-carousel [isControls]="true" [animation]="'slide'">
+                          <mdb-carousel-item>
+                              <img src="assets/companies/g33/two.jpeg" class="img-fluid" width="200" alt="first slide">
+                          </mdb-carousel-item>
+                          <mdb-carousel-item>
+                              <img src="assets/companies/g33/one.jpeg" class="img-fluid" width="200" alt="second slide">
+                          </mdb-carousel-item>
+                        </mdb-carousel>
+                  </div>
+                  <div class="col">
+                      <p>The latest in branded apparel</p>
+                      <p>Location: Ground floor, Yare Plaza</p>
+                      <p>Opening: 8:00 am</p>
+                      <p>Closing: 6:30 pm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer justify-items-center">
+                <button type="button" mdbBtn color="danger" rounded="true" class="waves-light" aria-label="Close" (click)="modalFive.hide()" mdbWavesEffect>Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal five end -->
+
       <!-- Grid column -->
-      <div class="view overlay mb-3 pics animation all 2 wow fadeInUp">
+      <div class="view overlay mb-3 pics animation all 2 wow fadeInUp" (click)="modalSix.show()">
         <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
           alt="Card image cap">
         <div class="mask flex-center bg-dark-red-op-9">
@@ -58,16 +253,43 @@
         </div>
       </div>
       <!-- Grid column -->
-  
-      <!-- Grid column -->
-      <div class="view overlay mb-3 pics animation all 2 wow fadeInUp">
-        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
-          alt="Card image cap">
-        <div class="mask flex-center bg-dark-red-op-9">
-          <p class="light-grey-text my-title-font h1">Fashion</p>
+      <!-- modal six -->
+      <div mdbModal #modalSix="mdbModal" class="modal fade bg-navy-blue" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="modalSix.hide()">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title w-100 my-title-font navy-blue-text text-center" id="myModalLabel">G33</h4>
+              </div>
+              <div class="modal-body my-sub-font grey-text">
+                <div class="row">
+                  <div class="col">
+                      <mdb-carousel [isControls]="true" [animation]="'slide'">
+                          <mdb-carousel-item>
+                              <img src="assets/companies/g33/two.jpeg" class="img-fluid" width="200" alt="first slide">
+                          </mdb-carousel-item>
+                          <mdb-carousel-item>
+                              <img src="assets/companies/g33/one.jpeg" class="img-fluid" width="200" alt="second slide">
+                          </mdb-carousel-item>
+                        </mdb-carousel>
+                  </div>
+                  <div class="col">
+                      <p>The latest in branded apparel</p>
+                      <p>Location: Ground floor, Yare Plaza</p>
+                      <p>Opening: 8:00 am</p>
+                      <p>Closing: 6:30 pm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer justify-items-center">
+                <button type="button" mdbBtn color="danger" rounded="true" class="waves-light" aria-label="Close" (click)="modalSix.hide()" mdbWavesEffect>Close</button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- Grid column -->
+        <!-- modal six end -->
   
     </div>
   
