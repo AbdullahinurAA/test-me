@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { AgmCoreModule } from '@agm/core';
+
 import { HttpClientModule } from "@angular/common/http";
 import { ReactiveFormsModule } from '@angular/forms'
 
@@ -42,10 +42,6 @@ import { ServicesComponent } from './services/services.component';
     ReactiveFormsModule,
     ToastModule.forRoot(),
     MDBBootstrapModulesPro.forRoot(),
-    AgmCoreModule.forRoot({
-      // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key
-      apiKey: 'AIzaSyAhL5H-K4_4aXpqBYtuyjqTtyzCVTqEtSc'
-    }),
     DashboardModule,
     AppRoutingModule,
 
