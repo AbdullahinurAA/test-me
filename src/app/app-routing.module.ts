@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: '', redirectTo: "/home", pathMatch: 'full' },
   { path: 'about', component: AboutComponent},
   { path: 'contact', component: ContactComponent },
-  { path: 'services', component: ServicesComponent },
+  { path: 'facilities', component: ServicesComponent },
   { path: '**', component: PageNotFoundComponent },
   // import dashboard routing plus children
   { 
